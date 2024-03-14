@@ -11,7 +11,7 @@ problem = LpProblem("MaximizeProduction", LpMaximize)
 problem += 2 * lemonade + fruit_juice <= 100  # вода
 problem += 1 * lemonade <= 50  # цукор
 problem += 1 * lemonade <= 30  # лимонний сік
-problem += 2 * fruit_juice + 1 * lemonade <= 40  # фруктове пюре
+problem += 2 * fruit_juice <= 40  # фруктове пюре
 
 # Додаємо функцію мети для максимізації кількості продуктів
 problem += lemonade + fruit_juice
